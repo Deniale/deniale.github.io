@@ -76,7 +76,8 @@ header{
 	position: absolute;
 	content: '';
 	display: block;
-	background: url(../img/m.png) no-repeat;
+	background: url("../img/m.png");
+	background-repeat: no-repeat;
 	width: 49px;
 	height: 61px;
 	margin-top: -20px;
@@ -241,7 +242,6 @@ div.tab {
     justify-content: center
 }
 
-/* Style the buttons inside the tab */
 div.tab button {
 	height: 170px;
 	width: 100%;
