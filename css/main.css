@@ -71,16 +71,18 @@ header{
 	color: #038c8c;
 	padding-left: 52px;
 	margin-top: 50px;
+	z-index: -1;
 }
 .logo a:before{
 	position: absolute;
 	content: '';
 	display: block;
-	background-image: url("../img/m.png");
+	background-image: url("../img/Mlatter.png");
 	background-repeat: no-repeat;
 	width: 49px;
 	height: 61px;
 	margin-top: -20px;
+	z-index: 1;
 }
 .menu{
 	display: flex;
