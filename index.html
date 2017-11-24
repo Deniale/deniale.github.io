@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Flattyle</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header-wrap">
+                <div class="logo wow fadeInDown" data-wow-delay="0.1s">
+                    <a href="#">inimal</a>
+                </div>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.1s"><a href="#tanner" class="menu__link">Products</a></li>
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.2s"><a href="#about" class="menu__link">Services</a></li>
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.3s"><a href="#expertise" class="menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+   <section id="banner">
+       <div class="wrapper">
+           <div class="banner-container">
+                <div class="img-container">
+                    <img src="img/iphone.png" alt="iphone"> 
+                </div>
+                <div class="desc-container">
+                    <!-- <img src="img/world.png" alt=""> -->
+                    <p class="world">App of<br />the year</p>
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+       </div>
+   </section>
+   <section id="about">
+       <div class="wrapper">
+            <div class="about-container">
+                       <h2>About minimal</h2>  
+                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                       <img src="img/app.png" alt="">
+            </div>
+       </div>
+   </section>
+   <section id="products">
+       <!-- <div class="wrapper"> --><!-- убрать для расстяжки по длине -->
+            <div class="tab">
+               <button class="tablinks" id="bSearch" onclick="openProduct(event, 'Search')"></button>
+               <button class="tablinks" id="bPower"  onclick="openProduct(event, 'Power')"></button>
+               <button class="tablinks" id="bApple"  onclick="openProduct(event, 'Apple')"></button>
+               <button class="tablinks" id="bBasket"  onclick="openProduct(event, 'Basket')"></button>
+               <button class="tablinks" id="bLock"  onclick="openProduct(event, 'Lock')"></button>
+               <button class="tablinks" id="bStar"  onclick="openProduct(event, 'Star')"></button>
+            </div>
+            <div id="Search" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/laptop.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+
+            <div id="Power" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/battery.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+
+            <div id="Apple" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/iphone2.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+
+            <div id="Basket" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/ipad.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+
+            <div id="Lock" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/lock.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+
+            <div id="Star" class="tabcontent">
+                <div class="img-container">
+                    <img src="img/car.png" alt="Laptop"> 
+                </div>
+                <div class="desc-container">
+                    <h1>My Apps Shoecase</h1>
+                    <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+       <!-- </div> --><!-- и это -->
+   </section>
+    <section id="project">
+        <!-- <div class="wrapper"> -->
+            <div class="pr-container">
+                <div class="pr-info">
+                    <h3>60%</h3>
+                    <p>of project completed</p>
+                </div>
+                <div class="pr-img">
+                      <img src="img/arrows.png" alt="">      
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+    <footer>
+        <div class="wrapper">
+            <p>Copyright &copy; 2017 <a href="https://vk.com/zudkip">JaredBay</a> </p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[data-rel^=lightcase]').lightcase();
+    });
+</script>
+</body>
+</html>
