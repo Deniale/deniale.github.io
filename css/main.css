@@ -230,11 +230,11 @@ h1, h2, p{
 #products{
 	height: 700px;
 }
-
+#products .desc-container h1{
+	padding-top: 178px;
+}
 div.tab {
     overflow: hidden;
-    /*border: 1px solid #ccc;*/
-    /*background-color: #f1f1f1;*/
     display: flex;
     -ms-align-items: center;
     align-items: center;
@@ -324,8 +324,7 @@ div.tab button.active {
 
 /* Style the tab content */
 .tabcontent {
-	/*display: flex !important;*/
-	color: #000;
+	color: #fff;
 	height: 530px;
     display: none;
     -webkit-animation: fadeEffect 1s;
@@ -340,7 +339,7 @@ div.tab button.active {
 	margin-right: 0px;
 }
 #products .desc-container{
-	width: 35%;
+	width: 50%;
 	float:right;
 }
 #Search{
@@ -363,35 +362,35 @@ div.tab button.active {
 }
 #project{
 	height: 512px;
-	width: 100%;
 }
 .pr-container{
 	display: flex;
 	text-align: center;
 }
 .pt-info{
-	width: 100%;
+	width: 100vw;
 }
 .pr-info h3{
 	font-family: SegoeWP-Black;
-	font-size: 200px;
+	font-size: 199px;
+	line-height: 200px;
 	color: #49d7b0;
-	padding-top: 80px;
+	padding: 80px 40px 0;
 }
 .pr-info p{
 	font-family: SegoeWP-Light;
 	font-size: 74px;
+	line-height: 75px;
 	color: #49d7b0;
 	text-transform: uppercase;
 	padding-bottom: 80px;
 }
 .pr-img{
-	width: 100%;
+	width: 100vw;
 	background-color: #49d7b0;
 }
 .pr-img img{
-	padding-top: 145px;
-	padding-bottom: 146px;
+	padding: 145px 0 146px
 }
 footer{
 	font-family: SegoeWP-Light;
