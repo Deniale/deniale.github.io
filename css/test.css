@@ -1,0 +1,39 @@
+.hamburgler {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 30px;
+  height: 25px;
+  display: block;
+  transition: .3s ease all;
+}
+.hamburgler.no-hamburgler {
+  transform: rotate(-45deg);
+}
+.bun,
+.meat {
+  display: block;
+  width: 100%;
+  background: #cb4b1f;
+  height: 20%;
+  transition: .3s ease all;
+  border-radius: 50px;
+}
+.no-hamburgler .top {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 50px 50px 0 0;
+}
+.no-hamburgler .bottom {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 0 0 50px 50px;
+}
+.meat {
+  margin: 20% 0;
+}
+.no-hamburgler .meat {
+  margin: 2% 0;
+}

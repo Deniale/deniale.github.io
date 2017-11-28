@@ -1,0 +1,53 @@
+@dark: #CB4B1F;
+@radius: 50px;
+
+.hamburgler{
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 30px;
+    height: 25px;
+    display: block;
+    transition: .3s ease all;
+
+    &.no-hamburgler{
+        transform: rotate(-45deg);
+    }
+}
+
+.bun,
+.meat{
+    display: block;
+    width: 100%;
+    background: @dark;
+    height: 20%;
+    transition: .3s ease all;
+    border-radius: @radius;
+}
+
+.top{
+     .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: @radius @radius 0 0;
+    }
+}
+
+.bottom{
+    .no-hamburgler & {
+        height: 38%;
+        width: 20%;
+        margin-left: 40%;
+        border-radius: 0 0 @radius @radius;
+    }
+}
+
+.meat{
+    margin: 20% 0;
+    
+    .no-hamburgler &{
+        margin: 2% 0;
+
+    }
+}

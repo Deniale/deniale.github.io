@@ -1,42 +1,33 @@
-@font-face{
-
-font-family: 'StRyde';
-
-src: url('fonts/StRyde.otf');
-
-src: url('fonts/StRyde.otf') format('opentype');
-
-font-weight: normal;
-
-font-style: normal;
-
+@font-face {
+    font-family: 'StRyde';
+    src: url('fonts/StRyde.eot');
+    src: url('fonts/StRyde.eot') format('embedded-opentype'),
+         url('fonts/StRyde.woff2') format('woff2'),
+         url('fonts/StRyde.woff') format('woff'),
+         url('fonts/StRyde.ttf') format('truetype'),
+         url('fonts/StRyde.svg#StRyde') format('svg');
 }
-@font-face{
 
-font-family: 'SegoeWP-Light';
-
-src: url('fonts/SegoeWP-Light.ttf');
-
-src: url('fonts/SegoeWP-Light.ttf') format('truetype');
-
-font-weight: 300;
-
-font-style: normal;
-
+@font-face {
+    font-family: 'SegoeWPLight';
+    src: url('fonts/SegoeWPLight.eot');
+    src: url('fonts/SegoeWPLight.eot') format('embedded-opentype'),
+         url('fonts/SegoeWPLight.woff2') format('woff2'),
+         url('fonts/SegoeWPLight.woff') format('woff'),
+         url('fonts/SegoeWPLight.ttf') format('truetype'),
+         url('fonts/SegoeWPLight.svg#SegoeWPLight') format('svg');
 }
-@font-face{
 
-font-family: 'SegoeWP-Black';
-
-src: url('fonts/SegoeWP-Black.ttf');
-
-src: url('fonts/SegoeWP-Black.ttf') format('truetype');
-
-font-weight: 900;
-
-font-style: normal;
-
+@font-face {
+    font-family: 'SegoeWPBlack';
+    src: url('fonts/SegoeWPBlack.eot');
+    src: url('fonts/SegoeWPBlack.eot') format('embedded-opentype'),
+         url('fonts/SegoeWPBlack.woff2') format('woff2'),
+         url('fonts/SegoeWPBlack.woff') format('woff'),
+         url('fonts/SegoeWPBlack.ttf') format('truetype'),
+         url('fonts/SegoeWPBlack.svg#SegoeWPBlack') format('svg');
 }
+
 body{
 	color: #fff;
 }
@@ -46,8 +37,11 @@ header{
 	right: 0px;
 	z-index: 99;
 }
+#header-mob{
+	display: none;
+}
 .wrapper{
-	max-width: 1023px;
+	max-width: 1170px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -92,7 +86,7 @@ header{
 	list-style: none;
 }
 .navigation{
-	font-family: 'SegoeWP-Light';
+	font-family: 'SegoeWPLight';
 	font-weight: 300;
 	width: 100%;
 	text-align: right;
@@ -165,7 +159,7 @@ p.p-desc{
   	padding-left: 55px;
   	padding-top: 13px;
   	font-size: 17px;
-	font-family: 'SegoeWP-Light';
+	font-family: 'SegoeWPLight';
 	font-weight: 300;
 }
 .btn:hover{
@@ -180,7 +174,7 @@ p.p-desc{
 	top:2px;
 }
 h1, h2, p{
-	font-family: 'SegoeWP-Light';
+	font-family: 'SegoeWPLight';
 	font-weight: 300;
 }
 .desc-container .world{
@@ -330,7 +324,6 @@ div.tab button.active {
 	height: 530px;
     display: none;
     -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 #products .img-container{
 	position: absolute;
@@ -341,7 +334,7 @@ div.tab button.active {
 	margin-right: 0px;
 }
 #products .desc-container{
-	width: 50%;
+	width: 42%;
 	float:right;
 }
 #Search{
@@ -370,17 +363,17 @@ div.tab button.active {
 	text-align: center;
 }
 .pt-info{
-	width: 100vw;
+	width: 50%;
 }
 .pr-info h3{
-	font-family: SegoeWP-Black;
+	font-family: 'SegoeWPBlack';
 	font-size: 199px;
 	line-height: 200px;
 	color: #49d7b0;
 	padding: 80px 40px 0;
 }
 .pr-info p{
-	font-family: SegoeWP-Light;
+	font-family: 'SegoeWPLight';
 	font-size: 74px;
 	line-height: 75px;
 	color: #49d7b0;
@@ -388,19 +381,19 @@ div.tab button.active {
 	padding-bottom: 80px;
 }
 .pr-img{
-	width: 100vw;
+	width: 50%;
 	background-color: #49d7b0;
 }
 .pr-img img{
 	padding: 145px 0 146px
 }
 footer{
-	font-family: SegoeWP-Light;
+	font-family: 'SegoeWPLight';
 	font-size: 23px;
 	color: #989898;
 	text-align: center;
 }
-footer{
+footer .wrapper{
 	border-top: 1px solid #dedede;
 }
 footer p{
@@ -413,4 +406,400 @@ footer p{
 @keyframes fadeEffect {
     from {opacity: 0.9;}
     to {opacity: 1;}
+}
+@media(min-width:1024px) and (max-width: 1279px){
+	#header-mob{
+		display: none;
+	}
+	.logo{
+		margin-left: 15px;
+	}
+	#banner .img-container img{
+		height: 420px;
+	}
+	.desc-container .world{
+		padding-top: 130px;
+	}
+	#products .img-container img{
+		width: 530px;
+	}
+	#project{
+		height: 470px;
+	}
+	#project .pr-img {
+		height: 100%;
+	}
+	#project .pr-img img{
+		padding: 125px 0 125px;
+	}
+	.pr-info h3{
+		padding: 50px 40px 0;
+	}
+}
+@media(min-width:768px) and (max-width: 1023px){
+	#header-mob{
+		display: none;
+	}
+	.logo{
+		margin-left: 15px;
+	}
+	#banner{
+		height: 400px;
+	}
+	#banner .img-container img{
+		height: 300px;
+	}
+	.desc-container .world{
+		padding-top: 80px;
+		font-size: 19px;
+	}
+	.desc-container h1{
+		padding-top: 60px;
+		font-size: 35px;
+	}
+	.desc-container .p-desc{
+		padding-bottom: 15px;
+	}
+	#products{
+		height: 500px;
+	}
+	.tabcontent{
+		height: 370px;
+	}
+	#products .img-container{
+		padding-top: 60px;
+	}
+	#products .desc-container h1{
+		padding-top: 100px;
+	}
+	#products .img-container img{
+		width: 380px;
+	}
+	div.tab button {
+		height: 130px;
+	}
+	#project{
+		height: 250px;
+	}
+	#project .pr-img {
+		height: 100%;
+	}
+	#project .pr-img img{
+		width: 150px;
+		padding: 50px 0;
+	}
+	.pr-info h3{
+		font-size: 100px;
+		line-height: 100px;
+		padding: 20px 40px 0;
+	}
+	.pr-info p{
+		font-size: 50px;
+		line-height: 50px;
+		padding-bottom: 0;
+	}
+}
+@media(min-width:480px) and (max-width: 767px){
+	#header-mob{
+		display: none;
+	}
+	.logo{
+		margin-left: 15px;
+	}
+	#banner{
+		height: 300px;
+	}
+	.img-container{
+		padding-left: 20px;
+	}
+	.world:before{
+		width: 30px;
+		height: 30px;
+		background-size: 30px;
+	}
+	#banner .img-container img{
+		height: 200px;
+	}
+	.desc-container .world{
+		padding-top: 60px;
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.desc-container h1{
+		padding-top: 10px;
+		font-size: 25px;
+	}
+	.desc-container .p-desc{
+		padding-top: 10px;
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	#about{
+		height: 650px;
+	}
+	#about img{
+		height: 300px;
+	}
+	#products{
+		height: 310px;
+	}
+	.tabcontent{
+		height: 180px;
+	}
+	#products .img-container{
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	#products .img-container img{
+		width: 230px;
+	}
+	#products .desc-container h1{
+		padding-top: 15px;
+		font-size: 15px;
+	}
+	.desc-container .p-desc{
+		font-size: 9px;
+	}
+	div.tab button {
+		height: 130px;
+	}
+	#project{
+		height: 200px;
+	}
+	#project .pr-img {
+		height: 100%;
+	}
+	#project .pr-img img{
+		width: 100px;
+		padding: 50px 0;
+	}
+	.pr-info h3{
+		font-size: 90px;
+		line-height: 90px;
+		padding: 10px 40px 0;
+	}
+	.pr-info p{
+		font-size: 30px;
+		line-height: 40px;
+		padding-bottom: 0;
+	}
+	footer{
+		font-size: 18px;
+	}
+	footer p{
+		padding: 20px 0;
+	}
+}
+@media(min-width:320px) and (max-width: 479px){
+	#header-mob{
+		display: block;
+	}
+	#header-mob .logo{
+		font-size: 20px;
+		padding-bottom: 20px;
+		margin-top: -10px;
+		line-height: 0;
+	}
+	#header-mob .logo a{
+		padding-left: 31px;
+	}
+	#header-mob .logo a:before{
+		width: 30px;
+		height: 37px;
+		background-size: 30px auto;
+	}
+	.hamburgler {
+	  position: absolute;
+	  right: 10px;
+	  top: 12px;
+	  width: 30px;
+	  height: 25px;
+	  display: block;
+	  transition: .3s ease all;
+	}
+	.hamburgler.no-hamburgler {
+	  transform: rotate(-45deg);
+	}
+	.bun,
+	.meat {
+	  display: block;
+	  width: 100%;
+	  background: #636363;
+	  height: 20%;
+	  transition: .3s ease all;
+	  border-radius: 50px;
+	}
+	.no-hamburgler .top {
+	  height: 45%;
+	  width: 16%;
+	  margin-left: 40%;
+	  border-radius: 50px 50px 0 0;
+	}
+	.no-hamburgler .bottom {
+	  height: 45%;
+	  width: 16%;
+	  margin-left: 40%;
+	  margin-top: 5%;
+	  border-radius: 0 0 50px 50px;
+	}
+	.meat {
+	  margin: 15% 0;
+	}
+	.no-hamburgler .meat {
+	  margin: 2% 0;
+	}
+
+
+
+
+	header{
+		display: none !important;
+	}
+	.logo{
+		margin-left: 5px;
+	}
+	#banner{
+		height: 200px;
+		background: url("../img/main-bg.jpg") no-repeat center top !important;
+		background-size: cover;
+	}
+	.img-container{
+		padding-left: 5px;
+		margin-top: 30px;
+	}
+	.world:before{
+		width: 20px;
+		height: 20px;
+		background-size: 20px;
+	}
+	#banner .img-container img{
+		height: 150px;
+	}
+	.desc-container{
+		margin-left: 10px;
+	}
+	.desc-container .world{
+		padding-top: 40px;
+		font-size: 9px;
+		line-height: 10px;
+	}
+	.desc-container h1{
+		padding-top: 5px;
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.desc-container .p-desc{
+		padding-top: 10px;
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	p.p-desc{
+		margin-bottom: 5px;
+	}
+	.btn{
+		background-size: 17px auto;
+		height: 0;
+		padding: 5px 23px 14px;
+	}
+	.btn:after{
+		height: 35px;
+		width: 110px;
+		font-size: 11px;
+		padding-top: 11px;
+		padding-left: 48px;
+	}
+	#about{
+		height: 580px;
+	}
+	.about-container h2{
+		padding-top: 20px;
+	}
+	.about-container p{
+		padding: 29px 25px 40px;
+	}
+	#about img{
+		height: 250px;
+	}
+	#products{
+		height: 193px;
+	}
+	.tabcontent{
+		height: 140px;
+	}
+	#products .img-container{
+		padding-top: 30px;
+		padding-left: 10px;
+	}
+	#products .img-container img{
+		width: 150px;
+	}
+	#bSearch,#bPower,#bApple,#bBasket,#bStar{
+		background-size: 25px;
+	}
+	#bLock{
+		background-size: 20px;
+	}
+	#bStar:hover{
+		-webkit-background-size: 28px auto;
+		background-size: 28px auto;
+	}
+	#bLock:hover{
+		-webkit-background-size: 23px auto;
+		background-size: 23px auto;
+	}
+	#bBasket:hover{
+		-webkit-background-size: 28px auto;
+		background-size: 28px auto;
+	}
+	#bApple:hover{
+		-webkit-background-size: 28px auto;
+		background-size: 28px auto;
+	}
+	#bPower:hover{
+		-webkit-background-size: 28px auto;
+		background-size: 28px auto;
+	}
+	#bSearch:hover{
+		-webkit-background-size: 28px auto;
+		background-size: 28px auto;
+	}
+	#products .desc-container h1{
+		padding-top: 15px;
+		font-size: 16px;
+	}
+	.desc-container .p-desc{
+		font-size: 9px;
+		line-height: 9px;
+		padding-top: 3px;
+	}
+	div.tab button {
+		height: 53px;
+	}
+	#project{
+		height: 130px;
+	}
+	#project .pr-img {
+		height: 100%;
+	}
+	#project .pr-img img{
+		width: 100px;
+		padding: 25px 10px;
+	}
+	.pr-info h3{
+		font-size: 60px;
+		line-height: 60px;
+		padding: 5px 40px 0;
+	}
+	.pr-info p{
+		font-size: 20px;
+		line-height: 30px;
+		padding-bottom: 0;
+	}
+	footer{
+		font-size: 13px;
+	}
+	footer p{
+		padding: 10px 0;
+	}
 }
