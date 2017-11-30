@@ -1,0 +1,37 @@
+.modal-form h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#main-form input[type="text"],
+#main-form input[type="email"],
+#main-form textarea{
+    background: #fff;
+    font: 'StRyde';
+    font-size: 14px;
+    color: #a09ea5;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    box-shadow: none;
+    border: 1px solid #e5e5e5;
+}
+#main-form textarea{
+    height: 200px;
+    resize: none;
+    font-style: normal;
+}
+#main-form input[type="submit"]{
+    position: relative;
+    background: #10ccb4;
+    color: #fff;
+    display: block;
+    padding: 14px 15px;
+    border:none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'SegoeWPLight';
+    font-weight: 300;
+}
+#main-form input[type="submit"]:active{
+    top:2px;
+}

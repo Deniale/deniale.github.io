@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width">
     <title>Flattyle</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-noprefix.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
+    <div class="remodal-bg">
+    </div>
+    <!-- <a href="#modal" class="btn">Buy now</a> -->
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <div class="modal-form">
+            <h2>Заполните все поля и мы свяжемся с вами!</h2>
+            <form action=""  id="main-form">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Subject" required />
+                <textarea name="" placeholder="Your message" id="" cols="0" rows="0" required ></textarea>
+                <input type="submit" value="submit" id="submitb">
+            </form>
+        </div>
+        <!-- <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
+    </div>
+
     <header>
         <div class="wrapper">
             <div class="header-wrap">
@@ -18,9 +40,9 @@
                 </div>
                 <nav class="navigation">
                     <ul class="menu">
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.1s"><a href="#products" class="menu__link">Products</a></li>
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.2s"><a href="#about" class="menu__link">Services</a></li>
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.3s"><a href="#project" class="menu__link">Contact</a></li>
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.1s"><a href="" data-href="#products" class="menu__link">Products</a></li>
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.2s"><a href="" data-href="#about" class="menu__link">Services</a></li>
+                        <li class="menu__item wow fadeInDown" data-wow-delay="0.3s"><a href="" data-href="#project" class="menu__link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,8 +51,8 @@
     <div id="header-mob">
         <div class="wrapper">
             <div class="header-wrap">
-                <div class="logo wow fadeInDown" data-wow-delay="0.1s">
-                    <a href="#">inimal</a>
+                <div class="logo">
+                    <a id="toTop">inimal</a>
                 </div>
 
                 <a class="hamburgler">
@@ -38,13 +60,13 @@
                     <div class="meat"></div>
                     <div class="bun bottom"></div>
                 </a>
-                <!-- <nav class="navigation">
-                    <ul class="menu">
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.1s"><a href="#products" class="menu__link">Products</a></li>
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.2s"><a href="#about" class="menu__link">Services</a></li>
-                        <li class="menu__item wow fadeInDown" data-wow-delay="0.3s"><a href="#project" class="menu__link">Contact</a></li>
+                <div class="mob-navigation">
+                    <ul class=mob"menu">
+                        <li class="menu__item"><a href="" data-href="#products" class="menu__link">Products</a></li>
+                        <li class="menu__item"><a href="" data-href="#about" class="menu__link">Services</a></li>
+                        <li class="menu__item"><a href="" data-href="#project" class="menu__link">Contact</a></li>
                     </ul>
-                </nav> -->
+                </div>
             </div>
         </div>
     </div>
@@ -58,7 +80,7 @@
                     <p class="world">App of<br />the year</p>
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
        </div>
@@ -89,7 +111,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
 
@@ -100,7 +122,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
 
@@ -111,7 +133,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
 
@@ -122,7 +144,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
 
@@ -133,7 +155,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
 
@@ -144,7 +166,7 @@
                 <div class="desc-container">
                     <h1>My Apps Shoecase</h1>
                     <p class="p-desc">Lorem Ipsum is simply dummy text .....</p>
-                    <a href="#" class="btn"></a>
+                    <a href="#modal" class="btn">Buy now</a>
                 </div>
             </div>
         </div>
@@ -167,12 +189,15 @@
             <p>Copyright &copy; 2017 <a href="https://vk.com/zudkip">JaredBay</a> </p>
         </div>
     </footer>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/tabs.js"></script>
+    
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/remodal.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
     <script>
         new WOW().init();
     </script>

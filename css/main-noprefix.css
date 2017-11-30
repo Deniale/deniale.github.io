@@ -46,25 +46,27 @@ header{
 	width: 100%;
 }
 .header-wrap{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background: #fff;
 	color: #000;
 	font-size: 19px;
 	font-weight: 400;
 	line-height: 20px;
-	/*font-family: ;*/
+}
+header .header-wrap{
+	height: 90px;
 }
 .logo{
 	font-family: 'StRyde';
 	font-weight: 500;
 	font-size: 43px;
 	padding-top: 35px;
-	/*margin-left: 10px;*/
 }
 .logo a{
 	color: #038c8c;
 	padding-left: 52px;
-	margin-top: 50px;
 	z-index: -1;
 }
 .logo a:before{
@@ -75,13 +77,18 @@ header{
 	background-repeat: no-repeat;
 	width: 49px;
 	height: 61px;
-	margin-top: -20px;
+	top: 15px;
 	z-index: 1;
 }
 .menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	-ms-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 	list-style: none;
 }
@@ -94,6 +101,7 @@ header{
 }
 .menu__link:hover{
 	color: #017d82;
+	border-bottom: 1px solid #017d82;
 }
 .menu__link:active{
 	position: relative;
@@ -113,12 +121,12 @@ header{
 	height: 530px;
 	background: #00747e;
 	background-image: -webkit-radial-gradient(70% 70%, circle farthest-side, #10cdb4, #00747e);
-	background-image: -moz-radial-gradient(70% 70%, circle farthest-side, #10cdb4, #00747e);
-	background-image: -ms-radial-gradient(70% 70%, circle farthest-side, #10cdb4, #00747e);
 	background-image: -o-radial-gradient(70% 70%, circle farthest-side, #10cdb4, #00747e);
 	background-image: radial-gradient(70% 70%, circle farthest-side, #10cdb4, #00747e);
 }
 .banner-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .img-container{
@@ -129,13 +137,12 @@ header{
 p.p-desc{
 	margin-bottom: 30px;
 }
-.btn{
+/* .btn{
 	position: relative;
 	z-index: 1;
 	color: #fff;
 	background-image: url("../img/basket.png");
 	background-position: 15px 50%;
-	-webkit-background-size: 28px auto;
 	background-size: 28px auto;
 	background-repeat: no-repeat;
 	width: 55px;
@@ -163,16 +170,57 @@ p.p-desc{
 	font-weight: 300;
 }
 .btn:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 .btn:hover:after{
 	background-color: #3dc2b1;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 .btn:active{
 	position: relative;
 	top:2px;
+} */
+.btn {
+	width: 110px;
+	display: block;
+	font-size: 21px;
+	font-family: 'SegoeWPLight';
+	font-weight: 300;
+	color: #fff;
+	background-color: #3dc2b1;
+	text-decoration: none;
+	text-align: center;
+	padding: 12px 10px;
+	left: 45px;
+	position: relative;
+	cursor: pointer;
+	border: none;
 }
+.btn:before {
+	content: "";
+	background-color: #259d8e;
+	width: 55px;
+	height: 45px;
+	display: block;
+	position: absolute;
+	background-image: url("../img/basket.png");
+	background-position: 15px 50%;
+	background-size: 28px auto;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	line-height: 20px;
+	top: 0px;
+	margin-left: -64px;
+	font-size: 16px;
+}
+.btn:active{
+	top: 3px;
+}
+
 h1, h2, p{
 	font-family: 'SegoeWPLight';
 	font-weight: 300;
@@ -232,9 +280,14 @@ h1, h2, p{
 }
 div.tab {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center
 }
 
@@ -244,6 +297,8 @@ div.tab button {
     border: none;
     outline: none;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 #bSearch{
@@ -283,33 +338,39 @@ div.tab button {
 	background-repeat: no-repeat;
 }
 #bStar:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 66px auto;
 	background-size: 66px auto;
 }
 #bLock:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 53px auto;
 	background-size: 53px auto;
 }
 #bBasket:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 76px auto;
 	background-size: 76px auto;
 }
 #bApple:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 63px auto;
 	background-size: 63px auto;
 }
 #bPower:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 68px auto;
 	background-size: 68px auto;
 }
 #bSearch:hover{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
-	-webkit-background-size: 78px auto;
 	background-size: 78px auto;
 }
 
@@ -324,6 +385,7 @@ div.tab button.active {
 	height: 530px;
     display: none;
     -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
 }
 #products .img-container{
 	position: absolute;
@@ -359,6 +421,8 @@ div.tab button.active {
 	height: 512px;
 }
 .pr-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-align: center;
 }
@@ -381,7 +445,7 @@ div.tab button.active {
 	padding-bottom: 80px;
 }
 .pr-img{
-	width: 50%;
+	width: 100%;
 	background-color: #49d7b0;
 }
 .pr-img img{
@@ -399,14 +463,8 @@ footer .wrapper{
 footer p{
 	padding: 39px 0;
 }
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0.9;}
-    to {opacity: 1;}
-}
-@keyframes fadeEffect {
-    from {opacity: 0.9;}
-    to {opacity: 1;}
-}
+
+
 @media(min-width:1024px) and (max-width: 1279px){
 	#header-mob{
 		display: none;
@@ -620,7 +678,8 @@ footer p{
 		text-align: center;
 		top: 44px;
 		background: #fff;
-	    -webkit-animation: fadeEffect 1s;
+	   	-webkit-animation: fadeEffect 1s;
+	   	animation: fadeEffect 1s;
 	}
 	.mob-menu{
 		display:block;
@@ -636,6 +695,8 @@ footer p{
 	    height: 2px;
 	    width: 0%;
 	    background-color: #10cdb4;
+	    -webkit-transition: width .3s ease-in-out;
+	    -o-transition: width .3s ease-in-out;
 	    transition: width .3s ease-in-out;
 	    margin-left:35%;
 	}
@@ -660,9 +721,13 @@ footer p{
 	  width: 30px;
 	  height: 25px;
 	  display: block;
+	  -webkit-transition: .3s ease all;
+	  -o-transition: .3s ease all;
 	  transition: .3s ease all;
 	}
 	.hamburgler.no-hamburgler {
+	  -webkit-transform: rotate(-45deg);
+	  -ms-transform: rotate(-45deg);
 	  transform: rotate(-45deg);
 	}
 	.bun,
@@ -671,6 +736,8 @@ footer p{
 	  width: 100%;
 	  background: #636363;
 	  height: 20%;
+	  -webkit-transition: .3s ease all;
+	  -o-transition: .3s ease all;
 	  transition: .3s ease all;
 	  border-radius: 50px;
 	}
@@ -701,6 +768,9 @@ footer p{
 	.logo{
 		margin-left: 5px;
 	}
+	.logo a:before{
+		top: 5px;
+	}
 	#banner{
 		position: relative;
 		margin-bottom: 45px;
@@ -719,8 +789,13 @@ footer p{
 		height: 250px;
 	}
 	.banner-container{
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 	}
 	.desc-container{
@@ -748,18 +823,6 @@ footer p{
 	}
 	p.p-desc{
 		margin-bottom: 5px;
-	}
-	.btn{
-		background-size: 17px auto;
-		height: 0;
-		padding: 5px 23px 14px;
-	}
-	.btn:after{
-		height: 35px;
-		width: 110px;
-		font-size: 11px;
-		padding-top: 11px;
-		padding-left: 48px;
 	}
 	#about{
 		height: 580px;
@@ -799,27 +862,21 @@ footer p{
 		background-size: 20px;
 	}
 	#bStar:hover{
-		-webkit-background-size: 28px auto;
 		background-size: 28px auto;
 	}
 	#bLock:hover{
-		-webkit-background-size: 23px auto;
 		background-size: 23px auto;
 	}
 	#bBasket:hover{
-		-webkit-background-size: 28px auto;
 		background-size: 28px auto;
 	}
 	#bApple:hover{
-		-webkit-background-size: 28px auto;
 		background-size: 28px auto;
 	}
 	#bPower:hover{
-		-webkit-background-size: 28px auto;
 		background-size: 28px auto;
 	}
 	#bSearch:hover{
-		-webkit-background-size: 28px auto;
 		background-size: 28px auto;
 	}
 	#products .desc-container h1{
@@ -860,4 +917,13 @@ footer p{
 	footer p{
 		padding: 10px 0;
 	}
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0.9;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0.9;}
+    to {opacity: 1;}
 }
