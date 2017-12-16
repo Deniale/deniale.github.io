@@ -36,23 +36,47 @@ header .logo .menu__logo {
 header .logo .menu__logo:hover {
   background-color: #FF6600;
 }
-header .menu ul {
+header .menu #menu {
   list-style-type: none;
   display: flex;
+  position: relative;
 }
 header .menu .menu__item {
+  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header .menu .menu__item:hover {
+  background-color: #FF6600;
+}
+header .menu .menu__item:hover ul {
   display: block;
+  position: absolute;
+  z-index: 999;
+  list-style-type: none;
+  top: 100%;
+  left: 0;
+}
+header .menu .menu__item:hover ul .menu__item {
+  background: #1a1a1a;
+  border-top: 1px solid #000;
+}
+header .menu .menu__item:hover ul .menu__item:first-child {
+  border-top: none;
+}
+header .menu .menu__item:hover ul .menu__item:hover {
+  background-color: #FF6600;
+}
+header .menu .menu__item a {
   padding: 25px 15px;
+  display: block;
   text-decoration: none;
   font-family: 'Roboto';
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  ransition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-header .menu .menu__item:hover {
-  background-color: #FF6600;
+header .menu .menu__item ul {
+  display: none;
 }
 #banner .slider__box .slider__box-item {
   height: calc(100vh - 65px);

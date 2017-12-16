@@ -38,24 +38,49 @@ header{
 		}
 	}
 	.menu{
-		ul{
+		#menu{
 			list-style-type: none;
 			display: flex;
+			position: relative;
 		}
 		.menu__item{
-			display: block;
-			padding: 25px 15px;
-			text-decoration: none;
-			font-family: 'Roboto';
-			font-size: 15px;
-			font-weight: 600;
-			color: #fff;
 			-webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  			ransition:         all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  			transition:         all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
 			&:hover{
 				background-color: #FF6600;
+				ul{
+					display: block;
+					position: absolute;
+					z-index: 999;
+					list-style-type: none;
+					top: 100%;
+					left: 0;
+					.menu__item{
+						background: lighten(#000, 10%);
+						border-top: 1px solid #000;
+						&:first-child{
+							border-top: none;
+						}
+						&:hover{
+							background-color: #FF6600;
+						}
+					}
+				}
+			}
+			a{
+			padding: 25px 15px;
+				display: block;
+				text-decoration: none;
+				font-family: 'Roboto';
+				font-size: 15px;
+				font-weight: 600;
+				color: #fff;
+			}
+			ul{
+				display: none;
 			}
 		}
+
 	}
 }
 #banner{
