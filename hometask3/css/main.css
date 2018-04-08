@@ -284,6 +284,9 @@ h2 {
 	background-color: #515151;
 	color: #cecece;
 }
+.touch input[type=email]::placeholder {
+	color: #cecece;
+}
 .touch input[type=submit] {
 	display: block;
 	position: relative;
