@@ -77,6 +77,8 @@ header {
 .banner-right, .banner-left {
 	margin-left: 70px;
 	margin-right: 70px;
+	position: relative;
+	z-index: 99;
 }
 .banner-right h1 {
 	font-size: 38px;
